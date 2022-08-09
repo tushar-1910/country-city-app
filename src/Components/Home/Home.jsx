@@ -12,7 +12,7 @@ function Home() {
     const [country, setCountry] = React.useState("");
     const handleDelete = async (id) => {
         try {
-            await fetch(`http://localhost:8080/cities/${id}`, {
+            await fetch(`https://country-city-app-tushar.herokuapp.com/cities/${id}`, {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json'

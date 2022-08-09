@@ -17,7 +17,7 @@ export const getCountrySuccess = (data) => {
 export const getCountry = () => async(dispatch) => {
     try {
         dispatch(isLoading());
-        const response = await fetch('http://localhost:8080/countries');
+        const response = await fetch('https://country-city-app-tushar.herokuapp.com/countries');
         let data = await response.json();
         dispatch(getCountrySuccess(data));
     } catch (error) {

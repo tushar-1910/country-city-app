@@ -17,7 +17,7 @@ export const getCitySuccess = (data) => {
 export const getcity = () => async(dispatch) => {
     try {
         dispatch(getCityLoading());
-        const response = await fetch('http://localhost:8080/cities');
+        const response = await fetch('https://country-city-app-tushar.herokuapp.com/cities');
         let data = await response.json();
         dispatch(getCitySuccess(data));
     } catch (error) {
@@ -29,7 +29,7 @@ export const sortPopulation = (order,country) => async(dispatch) => {
     try {
         console.log(order,country)
         dispatch(getCityLoading());
-        const response = await fetch(`http://localhost:8080/cities`);
+        const response = await fetch(`https://country-city-app-tushar.herokuapp.com/cities`);
         let data = await response.json();
         if(order === 'asc'){
             data.sort((a,b) => a.population - b.population);
@@ -55,7 +55,7 @@ export const filterCountry = (country) => async(dispatch) => {
             return;
         }
         dispatch(getCityLoading());
-        const response = await fetch(`http://localhost:8080/cities?country=${country}`);
+        const response = await fetch(`https://country-city-app-tushar.herokuapp.com/cities?country=${country}`);
         let data = await response.json();
         dispatch(getCitySuccess(data));
     } catch (error) {

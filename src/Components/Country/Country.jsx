@@ -22,7 +22,7 @@ function Country() {
        alert("Please enter country")
      }
       else{
-        await fetch('http://localhost:8080/countries', {
+        await fetch('https://country-city-app-tushar.herokuapp.com/countries', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'

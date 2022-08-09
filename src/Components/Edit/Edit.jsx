@@ -32,7 +32,7 @@ export default function TransitionsModal({item}) {
     const updateCity = async (e) => {
         e.preventDefault();
         try {
-            await fetch(`http://localhost:8080/cities/${item.id}`, {
+            await fetch(`https://country-city-app-tushar.herokuapp.com/cities/${item.id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
