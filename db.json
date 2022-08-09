@@ -1,0 +1,36 @@
+{
+  "countries": [
+    {
+      "id": 1,
+      "country": "India"
+    },
+    {
+      "id": 2,
+      "country": "USA"
+    },
+    {
+      "country": "China",
+      "id": 3
+    }
+  ],
+  "cities": [
+    {
+      "city": "Pune",
+      "country": "India",
+      "population": "123123",
+      "id": 4
+    },
+    {
+      "city": "California",
+      "country": "USA",
+      "population": "1230000",
+      "id": 5
+    },
+    {
+      "city": "Goa",
+      "country": "India",
+      "population": "1470000",
+      "id": 7
+    }
+  ]
+}
